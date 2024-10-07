@@ -1,0 +1,97 @@
+@import url(normalize.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+:root {
+    --first-color: #FFFFFF;
+    --second-color: #13183F;
+    --paragraph: #83869A;
+    --linear-gradient: linear-gradient(#FF6F48, #F02AA6);
+}
+
+body {
+    background-color: var(--first-color);
+}
+
+header {
+    display: flex;
+    margin: 24px auto;
+    width: 80%;
+    justify-content: space-between;
+}
+
+header img {
+    width: 111px;
+    height: 28px;
+    margin: 16px 0;
+}
+
+header a {
+    background: var(--second-color);
+    text-decoration: none;
+    color: var(--first-color);
+    border-radius: 28px;
+    padding: 16px 32px;
+    text-align: center;
+    line-height: 150%;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0;
+}
+
+main {
+    margin: 64px auto;
+    width: 80%;
+    display: flex;
+}
+
+main div.box-left {
+    width: 50%;
+    margin: 110px 32px 110px 0;
+}
+
+main h1 {
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 120%;
+    letter-spacing: 0;
+    color: var(--second-color);
+    margin-bottom: 24px;
+}
+
+main p {
+    color: var(--paragraph);
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 150%;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+main a {
+    color: var(--first-color);
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 150%;
+    background: var(--linear-gradient);
+    padding: 16px 32px;
+    border-radius: 28px;
+    text-decoration: none;
+}
+
+main div.image-principal {
+    width: 50%;
+}
+
+main img {
+    width: 317px;
+    margin: 0 58px 0 168px;
+}
