@@ -53,6 +53,11 @@ header a {
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 0;
+    transition: all ease 0.3s;
+}
+
+header a:hover {
+    transform: scale(1.1);
 }
 
 .main {
@@ -200,6 +205,12 @@ header a {
     line-height: 150%;
     color: var(--ancre-cards);
     text-decoration: none;
+    transition: all ease 0.3s;
+}
+
+.box a:hover {
+    text-decoration: underline;
+    color: var(--linear-gradient-footer);
 }
 
 footer {
@@ -232,4 +243,9 @@ footer {
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 0;
+    transition: all ease 0.3s;
+}
+
+.footer a:hover {
+    box-shadow: 0 0 50px var(--first-color);
 }
