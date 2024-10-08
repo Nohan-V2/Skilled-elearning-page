@@ -12,12 +12,12 @@
 :root {
     --first-color: #FFFFFF;
     --second-color: #13183F;
+    --ancre-cards: #F74780;
+    --second-color-hover: rgba(102, 108, 163, 1);
     --paragraph: #83869A;
     --shadow: rgba(6, 22, 141, .04);
-    --linear-gradient: linear-gradient(#FF6F48, #F02AA6);
-    --linear-gradient-hover: linear-gradient(#FF6F4880, #F02AA680);
-    --linear-gradient-footer: linear-gradient(#4851FF, #F02AA6);
-    --ancre-cards: #F74780;
+    --linear-gradient: linear-gradient(rgba(255, 111, 72), rgba(240, 42, 166));
+    --linear-gradient-footer: linear-gradient(#4851ff, #F02AA6);
     --linear-gradient-main: linear-gradient(#FFFFFF, #F0F1FF);
 }
 
@@ -57,7 +57,7 @@ header a {
 }
 
 header a:hover {
-    transform: scale(1.1);
+    background-color: var(--second-color-hover);
 }
 
 .main {
@@ -112,7 +112,7 @@ header a:hover {
 }
 
 .box-left a:hover {
-    background: var(--linear-gradient-hover);
+    border: var(--second-color) 2px solid;
 }
 
 .image-principal {
@@ -170,6 +170,7 @@ header a:hover {
 }
 
 .description {
+    color: var(--first-color);
     width: 288px;
 }
 
@@ -210,7 +211,7 @@ header a:hover {
 
 .box a:hover {
     text-decoration: underline;
-    color: var(--linear-gradient-footer);
+    color: var(--second-color-hover);
 }
 
 footer {
@@ -247,5 +248,5 @@ footer {
 }
 
 .footer a:hover {
-    box-shadow: 0 0 50px var(--first-color);
+    border: var(--first-color) 2px solid;
 }
